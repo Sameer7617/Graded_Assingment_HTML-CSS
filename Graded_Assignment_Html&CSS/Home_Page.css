@@ -1,0 +1,154 @@
+body{
+    height: auto;
+    margin: 0%;
+}
+header{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(72, 192, 201);
+}
+header h1{
+    margin: 0%;
+}
+footer{
+    background-color: rgb(4, 116, 116);
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+}
+#navigate{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.menu{
+    margin: 0%;
+    background-color: rgba(104, 81, 81, 0.733);
+}
+.menu li a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.925);;
+}
+.product{
+    padding: 8px;
+    width: 21%;
+    min-width: 140px;
+    min-height: 180px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: rgb(10, 190, 196);
+    box-shadow: 5px 5px 10px gainsboro;
+}
+.product:hover{
+    width: 25%;
+    height: 200px;
+}
+.product >h4, .product > p{
+    margin: 0%;
+}
+.product > p{
+    font-size: 18px;
+    color: rgb(1, 7, 15);
+}
+.product img{
+    width: 98%;
+    height: 120px;
+}
+.product button{
+    width: 100%;
+    background-color: lavender;
+    font-size: 16px;
+    border: 1px solid blue;
+    color: rgb(38, 0, 255);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.product button:active{
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+    
+}
+#img_section{
+    margin: 3px;
+    height: 500px;
+    min-height: 300px;
+    text-align: center;
+    background-color: rgb(6, 241, 241);
+    border: 5px solid rgb(243, 227, 6);
+    animation-name: image-change;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+@keyframes image-change {
+    0%{
+        background-image: url(Images/Animation/ani1.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+   25%{
+        background-image: url(Images/Animation/ani2.png); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+    50%{
+        background-image: url(Images/Animation/ani3.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+    75%{
+        background-image: url(Images/Animation/ani4.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+    100%{
+        background-image: url(Images/Animation/ani5.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+}
+.menu li:nth-child(2):hover #medicines, .menu li:nth-child(3):hover #health{
+    display: block;
+}
+#medicines, #health{
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+#medicines li, #health li{
+    display: block;
+}
+#medicines li:hover, #health li:hover{
+    background-color: gainsboro;
+}
+#medicines li a, #health li a{
+    color: steelblue;
+    font-size: 16px;
+}
+.main{
+    padding-left: 20px;
+}
